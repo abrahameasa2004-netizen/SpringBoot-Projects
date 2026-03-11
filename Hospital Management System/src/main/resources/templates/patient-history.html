@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>
+			The Billing Page
+		</title>
+	</head>
+	<body>
+		<div class="container">
+		    <h2>Medical History: <span th:text="${patient.fullname}"></span></h2>
+		    <div class="card mb-3" th:each="record : ${records}">
+		        <div class="card-header" th:text="${record.recordDate}"></div>
+		        <div class="card-body">
+		            <h5 class="card-title">Diagnosis</h5>
+		            <p class="card-text" th:text="${record.diagnosis}"></p>
+		            <h6>Treatment Plan</h6>
+		            <p th:text="${record.treatment}"></p>
+		        </div>
+		    </div>
+		</div>
+	</body>
+</html>

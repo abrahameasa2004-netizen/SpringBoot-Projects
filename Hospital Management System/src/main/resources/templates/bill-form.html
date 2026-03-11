@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>
+			The Billing Page
+		</title>
+	</head>
+	<body class="container mt-5">
+	    <div class="card p-4 shadow">
+	        <h2 class="mb-4">Generate Bill</h2>
+	        <p>Patient: <strong th:text="${bill.appointment.patient.fullname}"></strong></p>
+	        
+	        <form th:action="@{/saveBill}" th:object="${bill}" method="post">
+	            <input type="hidden" th:field="*{appointment.id}">
+	            
+	            <div class="mb-3">
+	                <label class="form-label">Total Billing Amount:</label>
+	                <input type="number" step="0.01" th:field="*{amount}" class="form-control" required>
+	            </div>
+	            
+	            <button type="submit" class="btn btn-primary">Save Invoice</button>
+	            <a th:href="@{/confirmed-appointments}" class="btn btn-secondary">Cancel</a>
+	        </form>
+	    </div>
+	</body>
+</html>

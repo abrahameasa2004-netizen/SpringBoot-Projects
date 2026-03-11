@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th=http://www.thymeleaf.org
+      xmlns:sec=http://www.thymeleaf.org/extras/spring-security
+      xmlns:shiro=http://www.pollix.at/thymeleaf/shiro>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" th:href="@{/style.css}" />
+	<title>Sign Up</title>
+</head>
+
+<body>
+	<div class="row">
+		<h1 class="text-center text-dark p-5">Sign Up!!</h1>
+	</div>
+
+	<div class="row">
+		<div class="col m-5">
+			<form method="post" th:action="@{admin-signup}">
+				<div class="form-outline mb-5">
+					<label for="fullname">Full Name:</label>
+					<input type="text" placeholder="Enter your Full Name" id="fullname" name="fullname" class="form-control"
+						required />
+				</div>
+
+				<div class="form-outline mb-5">
+					<label for="email">Email:</label>
+					<input type="email" placeholder="Enter your E-mail" id="email" name="email" class="form-control"
+						required />
+				</div>
+
+				<div class="form-outline mb-5">
+					<label for="username">Username:</label>
+					<input type="text" placeholder="For ex. CodingArtist" id="username" name="username"
+						class="form-control" required />
+				</div>
+
+				<div class="form-outline mb-5">
+					<label for="password">Password:</label>
+					<input type="password" placeholder="Minimum 6 characters" id="password" name="password"
+						class="form-control" required />
+				</div>
+
+				<button type="submit" value="signup" class="btn btn-primary btn-block px-4 py-2 fs-5">
+					Sign Up
+				</button>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
