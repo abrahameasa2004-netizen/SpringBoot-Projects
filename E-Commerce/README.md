@@ -91,14 +91,14 @@ GET    /api/admin/dashboard
 
 8. How to Run : 
 
-1. Clone Repository
+✔ Clone Repository
 
-2. Import into STS/Eclipse
+✔ Import into STS/Eclipse
 
-3. Create MySQL Database
+✔ Create MySQL Database
 
-4. Update application.properties
+✔ Update application.properties
 
-5. Run Spring Boot Application
+✔ Run Spring Boot Application
 
-6. Test APIs using Postman
+✔ Test APIs using Postman
