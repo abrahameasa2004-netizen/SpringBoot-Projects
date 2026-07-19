@@ -2,11 +2,12 @@
 # E-Commerce Backend System
 
 
-2. Project Description
+2. Project Description : 
 A RESTful E-Commerce Backend application built using Java, Spring Boot, Spring Security, JWT Authentication, Hibernate, and MySQL.
 
 
-3. Tech Stack
+3. Tech Stack : 
+
 Java
 Spring Boot
 Spring Security
@@ -19,7 +20,7 @@ Postman
 Git
 
 
-4. Features
+4. Features : 
 
 ✔ User Registration & Login
 
@@ -37,7 +38,8 @@ Git
 
 ✔ Payment Module (Mock)
 
-5. Project Structure
+5. Project Structure : 
+
 Controller
 Service
 Repository
@@ -47,7 +49,8 @@ DTO
 Configuration
 
 
-7. Database Tables
+7. Database Tables : 
+
 Users
 
 Products
@@ -65,7 +68,7 @@ Order Items
 Payments
 
 
-7. API Endpoints
+7. API Endpoints : 
 
 POST   /api/auth/register
 
@@ -86,7 +89,7 @@ GET    /api/admin/dashboard
 ✔ BCrypt Password Encryption
 
 
-8. How to Run
+8. How to Run : 
 
 1. Clone Repository
 
